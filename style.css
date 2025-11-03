@@ -1,0 +1,1510 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+header i{
+    color: #525252;
+}
+
+h4 p{
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.myheader {
+    border-bottom: 1px solid #000;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myname {
+    font-size: 21px;
+    letter-spacing: 1px;
+    padding-left: 10px;
+}
+
+.myname:active {
+    animation-play-state: running;
+}
+
+.mypro {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-left: 20px;
+}
+
+.myig {
+    padding-right: 10px;
+}
+
+/* 電腦版開始 */
+
+@media screen and (min-width: 992px) {
+    body {
+        background-color: #FCF4D9;
+        overflow: hidden;
+    }
+
+    span {
+        font-size: 18px;
+        color: #8a8a8a;
+        font-family: 'Poppins', sans-serif;
+        font-weight: lighter;
+    }
+
+    .myname:active {
+        animation: ballggor 0.6s linear 0s forwards, ballggo 0.7s cubic-bezier(0, .68, .08, 1) 0.7s forwards;
+    }
+
+    .machine {
+        background-image: url(images/machine.png);
+        width: 250px;
+        height: 391px;
+        background-position: center;
+        background-size: cover;
+        margin: 50px auto;
+        position: relative;
+        z-index: 5;
+    }
+
+    .mymachiner img {
+        position: relative;
+        top: 279px;
+        left: 119px;
+        animation: rotate 8s linear 0s forwards;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(-15deg);
+        }
+
+        to {
+            transform: rotate(45deg);
+        }
+    }
+
+    /* 01綠色扭蛋 */
+    .ballgall .po { 
+        display: none;
+    }
+
+    .ballgall:hover .po { 
+        display: block;
+    }
+    
+    .ballg {
+        animation: ballggor 8s linear 0s infinite forwards, ballggo 0.7s cubic-bezier(0, .68, .08, 1) 1.5s forwards;
+        position: absolute;
+        top: 130px;
+        left: -6px;
+        background-image: url(images/ball_g.png);
+        width: 80px;
+        height: 80px;
+        transition: 0.3s;
+    }
+
+    .ballgall:hover .ballg {
+        background-image: url(images/ball_gh.png);
+    }
+
+
+    .ballgt {
+        color: #a7e030;
+        font-size: 32px;
+        position: absolute;
+        top: 30px;
+        left: -280px;
+        text-align: center;
+        line-height: 30px;
+        animation: ballgtgo 0.6s cubic-bezier(.13, .53, .17, .96) 1.6s forwards;
+        opacity: 0;
+    }
+
+    .ballgall .po {
+        font-family: 'Poppins', sans-serif;
+        font-size: 21px;
+        text-align: center;
+        position: absolute;
+        top: 105px;
+        left: 28px;
+        opacity: 0;
+    }
+
+    .ballgall:hover .po {
+        opacity: 1;
+    }
+
+    @keyframes ballggor {
+        from {
+            transform: rotate(30deg);
+        }
+
+        to {
+            transform: rotate(390deg);
+        }
+    }
+
+    @keyframes ballggo {
+        from {
+            top: 137px;
+            left: -7px;
+        }
+
+        to {
+            top: 50px;
+            left: -115px;
+        }
+    }
+
+    @keyframes ballgtgo {
+        from {
+            opacity: 0;
+            transform: scale(0);
+            top: 30px;
+            left: -150px;
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+            top: 53px;
+            left: -270px;
+        }
+    }
+
+    /* 02黃色扭蛋 */
+
+    .ballyall .po { 
+        display: none;
+    }
+
+    .ballyall:hover .po { 
+        display: block;
+    }
+
+    .bally {
+        animation: ballygor 8s linear 0s infinite forwards, ballygo 0.7s cubic-bezier(0, .68, .08, 1) 1.5s forwards;
+        position: absolute;
+        top: 185px;
+        left: 25px;
+        background-image: url(images/ball_y.png);
+        width: 80px;
+        height: 80px;
+        transition: 0.3s;
+    }
+
+    .ballyall:hover .bally {
+        background-image: url(images/ball_yh.png);
+    }
+
+    .ballyt {
+        color: #fcdc27;
+        font-size: 32px;
+        position: absolute;
+        top: 190px;
+        left: -300px;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        line-height: 30px;
+        animation: ballytgo 0.6s cubic-bezier(.13, .53, .17, .96) 1.6s forwards;
+        opacity: 0;
+    }
+
+    .ballyall .po {
+        font-family: 'Poppins', sans-serif;
+        font-size: 21px;
+        text-align: center;
+        position: absolute;
+        top: 125px;
+        left: 28px;
+        opacity: 0;
+    }
+
+    .ballyall:hover .po {
+        opacity: 1;
+    }
+
+    @keyframes ballygor {
+        from {
+            transform: rotate(30deg);
+        }
+
+        to {
+            transform: rotate(390deg);
+        }
+    }
+
+    @keyframes ballygo {
+        from {
+            top: 137px;
+            left: -7px;
+        }
+
+        to {
+            top: 180px;
+            left: -165px;
+        }
+    }
+
+    @keyframes ballytgo {
+        from {
+            opacity: 0;
+            transform: scale(0);
+            top: 100px;
+            left: -150px;
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+            top: 190px;
+            left: -300px;
+        }
+    }
+
+
+    /* 03藍色扭蛋 */
+
+    .ballball .po { 
+        display: none;
+    }
+
+    .ballball:hover .po { 
+        display: block;
+    }
+
+    .ballb {
+        animation: ballbgor 8s linear 0s infinite forwards, ballbgo 0.7s cubic-bezier(0, .68, .08, 1) 1.5s forwards;
+        position: absolute;
+        top: 131px;
+        left: 177px;
+        background-image: url(images/ball_b.png);
+        width: 80px;
+        height: 80px;
+        transition: 0.3s;
+    }
+
+    .ballball:hover .ballb {
+        background-image: url(images/ball_bh.png);
+    }
+
+    .ballbt {
+        color: #9d92e2;
+        position: absolute;
+        top: 25px;
+        left: 350px;
+        text-align: center;
+        line-height: 30px;
+        animation: ballbtgo 0.6s cubic-bezier(.13, .53, .17, .96) 1.6s forwards;
+        opacity: 0;
+    }
+
+    .ballball .po {
+        font-family: 'Poppins', sans-serif;
+        font-size: 21px;
+        text-align: center;
+        position: absolute;
+        top: 138px;
+        left: 50px;
+        opacity: 0;
+    }
+
+    .ballball:hover .po {
+        opacity: 1;
+    }
+
+    @keyframes ballbgor {
+        from {
+            transform: rotate(30deg);
+        }
+
+        to {
+            transform: rotate(390deg);
+        }
+    }
+
+    @keyframes ballbgo {
+        from {
+            top: 139px;
+            left: 177px;
+        }
+
+        to {
+            top: 30px;
+            left: 270px;
+        }
+    }
+
+    @keyframes ballbtgo {
+        from {
+            opacity: 0;
+            transform: scale(0);
+            top: 100px;
+            left: 100px;
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+            top: 38px;
+            left: 360px;
+        }
+    }
+
+    /* 04粉色扭蛋 */
+
+    .ballpall .po { 
+        display: none;
+    }
+
+    .ballpall:hover .po { 
+        display: block;
+    }
+
+    .ballp {
+        animation: ballpgor 8s linear 0s infinite forwards, ballpgo 0.7s cubic-bezier(0, .68, .08, 1) 1.5s forwards;
+        position: absolute;
+        top: 170px;
+        left: 85px;
+        background-image: url(images/ball_p.png);
+        width: 80px;
+        height: 80px;
+        transition: 0.3s;
+    }
+
+    .ballpall:hover .ballp {
+        background-image: url(images/ball_ph.png);
+    }
+
+    .ballpt {
+        color: #ed8b9c;
+        position: absolute;
+        top: 140px;
+        left: 350px;
+        text-align: center;
+        line-height: 30px;
+        animation: ballptgo 0.6s cubic-bezier(.13, .53, .17, .96) 1.6s forwards;
+        opacity: 0;
+    }
+
+    .ballpall .po {
+        font-family: 'Poppins', sans-serif;
+        font-size: 21px;
+        text-align: center;
+        position: absolute;
+        top: 138px;
+        left: 66px;
+        opacity: 0;
+    }
+
+    .ballpall:hover .po {
+        opacity: 1;
+    }
+
+    .ballptext h4 {
+        width: 200px;
+    }
+
+    @keyframes ballpgor {
+        from {
+            transform: rotate(30deg);
+        }
+
+        to {
+            transform: rotate(390deg);
+        }
+    }
+
+    @keyframes ballpgo {
+        from {
+            top: 180px;
+            left: 85px;
+        }
+
+        to {
+            top: 140px;
+            left: 350px;
+        }
+    }
+
+    @keyframes ballptgo {
+        from {
+            opacity: 0;
+            transform: scale(0);
+            top: 100px;
+            left: 100px;
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+            top: 150px;
+            left: 400px;
+        }
+    }
+
+    /* 05紅色扭蛋 */
+
+    .ballrall .po { 
+        display: none;
+    }
+
+    .ballrall:hover .po { 
+        display: block;
+    }
+
+    .ballr {
+        animation: ballrgor 8s linear 0s infinite forwards, ballrgo 0.7s cubic-bezier(0, .68, .08, 1) 1.5s forwards;
+        position: absolute;
+        top: 186px;
+        left: 145px;
+        background-image: url(images/ball_r.png);
+        width: 80px;
+        height: 80px;
+        transition: 0.3s;
+    }
+
+    .ballrall:hover .ballr {
+        background-image: url(images/ball_rh.png);
+    }
+
+    .ballrt {
+        color: #da7258;
+        position: absolute;
+        top: 280px;
+        left: 360px;
+        text-align: center;
+        line-height: 30px;
+        animation: ballrtgo 0.6s cubic-bezier(.13, .53, .17, .96) 1.6s forwards;
+        opacity: 0;
+    }
+
+    .ballrall .po {
+        font-family: 'Poppins', sans-serif;
+        font-size: 21px;
+        text-align: center;
+        position: absolute;
+        top: 138px;
+        left: 75px;
+        opacity: 0;
+    }
+
+    .ballrall:hover .po {
+        opacity: 1;
+    }
+
+    .ballrtext h4 {
+        width: 200px;
+    }
+
+
+    @keyframes ballrgor {
+        from {
+            transform: rotate(30deg);
+        }
+
+        to {
+            transform: rotate(390deg);
+        }
+    }
+
+    @keyframes ballrgo {
+        from {
+            top: 170px;
+            left: 145px;
+        }
+
+        to {
+            top: 270px;
+            left: 295px;
+        }
+    }
+
+    @keyframes ballrtgo {
+        from {
+            opacity: 0;
+            transform: scale(0);
+            top: 100px;
+            left: 100px;
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+            top: 282px;
+            left: 352px;
+        }
+    }
+
+
+    footer {
+        color: #525252;
+        text-align: center;
+        /* background-color: #F3E5B4; */
+        height: 50px;
+        line-height: 50px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+
+
+    /* 動動底圖 */
+
+    .shape {
+        background: linear-gradient(45deg, rgb(230, 185, 128, 50%) 0%, rgb(234, 205, 163, 80%) 100%);
+        animation: morph 8s ease-in-out infinite;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        height: 600px;
+        width: 600px;
+        transition: all 1s ease-in-out;
+        z-index: -5;
+        position: absolute;
+        top: 20px;
+        left: 1100px;
+    }
+
+    .shape2 {
+        background: linear-gradient(45deg, rgb(230, 185, 128, 50%) 0%, rgb(234, 205, 163, 80%) 100%);
+        animation: morph 8s ease-in-out infinite;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        height: 300px;
+        width: 400px;
+        transition: all 1s ease-in-out;
+        z-index: -5;
+        position: absolute;
+        top: 320px;
+        left: -200px;
+    }
+
+    @keyframes morph {
+        0% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+
+        50% {
+            border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        }
+
+        100% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+    }
+
+}
+
+/* 平版版開始 */
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    body {
+        background-color: #FCF4D9;
+    }
+
+    .bg{
+        display: none;
+    }
+
+    span {
+        font-size: 18px;
+        color: #8a8a8a;
+        font-family: 'Poppins', sans-serif;
+        font-weight: lighter;
+    }
+
+    .myname:active {
+        animation: ballggor 0.6s linear 0s forwards, ballggo 0.7s cubic-bezier(0, .68, .08, 1) 0.7s forwards;
+    }
+
+    .machine {
+        background-image: url(images/machine.png);
+        width: 250px;
+        height: 391px;
+        background-position: center;
+        background-size: cover;
+        margin: 50px auto;
+        position: relative;
+    }
+
+    .mymachine {
+        position: relative;
+    }
+
+    .mymachiner img {
+        position: relative;
+        top: 278px;
+        left: 119px;
+        animation: rotate 1.5s linear 0s forwards;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(-15deg);
+        }
+
+        to {
+            transform: rotate(45deg);
+        }
+    }
+
+    /* 01綠色扭蛋 */
+
+    .ballg {
+        animation: ballggor 1.5s linear 0s forwards, ballggo 0.7s cubic-bezier(0, .68, .08, 1) 1.5s forwards;
+        position: absolute;
+        top: 130px;
+        left: -6px;
+        background-image: url(images/ball_g.png);
+        width: 80px;
+        height: 80px;
+        transition: 0.3s;
+    }
+
+    .ballgall:hover .ballg {
+        background-image: url(images/ball_gh.png);
+    }
+
+
+    .ballgt {
+        color: #a7e030;
+        font-size: 32px;
+        position: absolute;
+        top: 30px;
+        left: -280px;
+        text-align: center;
+        line-height: 30px;
+        animation: ballgtgo 0.6s cubic-bezier(.13, .53, .17, .96) 1.6s forwards;
+        opacity: 0;
+    }
+
+    .ballgall .po {
+        font-family: 'Poppins', sans-serif;
+        font-size: 21px;
+        text-align: center;
+        position: absolute;
+        top: 105px;
+        left: 28px;
+        opacity: 0;
+    }
+
+    .ballgall:hover .po {
+        opacity: 1;
+    }
+
+    @keyframes ballggor {
+        from {
+            transform: rotate(30deg);
+        }
+
+        to {
+            transform: rotate(0deg);
+        }
+    }
+
+    @keyframes ballggo {
+        from {
+            top: 137px;
+            left: -7px;
+        }
+
+        to {
+            top: -15px;
+            left: -125px;
+        }
+    }
+
+    @keyframes ballgtgo {
+        from {
+            opacity: 0;
+            transform: scale(0);
+            top: 30px;
+            left: -150px;
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+            top: 67px;
+            left: -160px;
+        }
+    }
+
+    /* 02黃色扭蛋 */
+
+    .bally {
+        animation: ballygor 1.5s linear 0s forwards, ballygo 0.7s cubic-bezier(0, .68, .08, 1) 1.5s forwards;
+        position: absolute;
+        top: 185px;
+        left: 25px;
+        background-image: url(images/ball_y.png);
+        width: 80px;
+        height: 80px;
+        transition: 0.3s;
+    }
+
+    .ballyall:hover .bally {
+        background-image: url(images/ball_yh.png);
+    }
+
+    .ballyt {
+        color: #fcdc27;
+        font-size: 32px;
+        position: absolute;
+        top: 190px;
+        left: -300px;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        line-height: 30px;
+        animation: ballytgo 0.6s cubic-bezier(.13, .53, .17, .96) 1.6s forwards;
+        opacity: 0;
+    }
+
+    .ballyall .po {
+        font-family: 'Poppins', sans-serif;
+        font-size: 21px;
+        text-align: center;
+        position: absolute;
+        top: 125px;
+        left: 28px;
+        opacity: 0;
+    }
+
+    .ballyall:hover .po {
+        opacity: 1;
+    }
+
+    @keyframes ballygor {
+        from {
+            transform: rotate(30deg);
+        }
+
+        to {
+            transform: rotate(0deg);
+        }
+    }
+
+    @keyframes ballygo {
+        from {
+            top: 137px;
+            left: -7px;
+        }
+
+        to {
+            top: 180px;
+            left: -100px;
+        }
+    }
+
+    @keyframes ballytgo {
+        from {
+            opacity: 0;
+            transform: scale(0);
+            top: 100px;
+            left: -150px;
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+            top: 260px;
+            left: -130px;
+        }
+    }
+
+
+    /* 03藍色扭蛋 */
+
+    .ballb {
+        animation: ballbgor 1.5s linear 0s forwards, ballbgo 0.7s cubic-bezier(0, .68, .08, 1) 1.5s forwards;
+        position: absolute;
+        top: 131px;
+        left: 177px;
+        background-image: url(images/ball_b.png);
+        width: 80px;
+        height: 80px;
+        transition: 0.3s;
+    }
+
+    .ballball:hover .ballb {
+        background-image: url(images/ball_bh.png);
+    }
+
+    .ballbt {
+        color: #9d92e2;
+        position: absolute;
+        top: 25px;
+        left: 350px;
+        text-align: center;
+        line-height: 30px;
+        animation: ballbtgo 0.6s cubic-bezier(.13, .53, .17, .96) 1.6s forwards;
+        opacity: 0;
+    }
+
+    .ballball .po {
+        font-family: 'Poppins', sans-serif;
+        font-size: 21px;
+        text-align: center;
+        position: absolute;
+        top: 140px;
+        left: 48px;
+        opacity: 0;
+    }
+
+    .ballball:hover .po {
+        opacity: 1;
+    }
+
+    @keyframes ballbgor {
+        from {
+            transform: rotate(30deg);
+        }
+
+        to {
+            transform: rotate(0deg);
+        }
+    }
+
+    @keyframes ballbgo {
+        from {
+            top: 139px;
+            left: 177px;
+        }
+
+        to {
+            top: -25px;
+            left: 300px;
+        }
+    }
+
+    @keyframes ballbtgo {
+        from {
+            opacity: 0;
+            transform: scale(0);
+            top: 100px;
+            left: 100px;
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+            top: 55px;
+            left: 280px;
+        }
+    }
+
+    /* 04粉色扭蛋 */
+
+    .ballp {
+        animation: ballpgor 1.5s linear 0s forwards, ballpgo 0.7s cubic-bezier(0, .68, .08, 1) 1.5s forwards;
+        position: absolute;
+        top: 170px;
+        left: 85px;
+        background-image: url(images/ball_p.png);
+        width: 80px;
+        height: 80px;
+        transition: 0.3s;
+    }
+
+    .ballpall:hover .ballp {
+        background-image: url(images/ball_ph.png);
+    }
+
+    .ballpt {
+        color: #ed8b9c;
+        position: absolute;
+        top: 140px;
+        left: 350px;
+        text-align: center;
+        line-height: 30px;
+        animation: ballptgo 0.6s cubic-bezier(.13, .53, .17, .96) 1.6s forwards;
+        opacity: 0;
+    }
+
+    .ballpall .po {
+        font-family: 'Poppins', sans-serif;
+        font-size: 21px;
+        text-align: center;
+        position: absolute;
+        top: 138px;
+        left: 66px;
+        opacity: 0;
+    }
+
+    .ballpall:hover .po {
+        opacity: 1;
+    }
+
+    .ballptext h4 {
+        width: 200px;
+    }
+
+    @keyframes ballpgor {
+        from {
+            transform: rotate(30deg);
+        }
+
+        to {
+            transform: rotate(0deg);
+        }
+    }
+
+    @keyframes ballpgo {
+        from {
+            top: 180px;
+            left: 85px;
+        }
+
+        to {
+            top: 120px;
+            left: 350px;
+        }
+    }
+
+    @keyframes ballptgo {
+        from {
+            opacity: 0;
+            transform: scale(0);
+            top: 100px;
+            left: 100px;
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+            top: 203px;
+            left: 288px;
+        }
+    }
+
+    /* 05紅色扭蛋 */
+
+    .ballr {
+        animation: ballrgor 1.5s linear 0s forwards, ballrgo 0.7s cubic-bezier(0, .68, .08, 1) 1.5s forwards;
+        position: absolute;
+        top: 186px;
+        left: 145px;
+        background-image: url(images/ball_r.png);
+        width: 80px;
+        height: 80px;
+        transition: 0.3s;
+    }
+
+    .ballrall:hover .ballr {
+        background-image: url(images/ball_rh.png);
+    }
+
+    .ballrt {
+        color: #da7258;
+        position: absolute;
+        top: 280px;
+        left: 360px;
+        text-align: center;
+        line-height: 30px;
+        animation: ballrtgo 0.6s cubic-bezier(.13, .53, .17, .96) 1.6s forwards;
+        opacity: 0;
+    }
+
+    .ballrall .po {
+        font-family: 'Poppins', sans-serif;
+        font-size: 21px;
+        text-align: center;
+        position: absolute;
+        top: 130px;
+        left: 75px;
+        opacity: 0;
+    }
+
+    .ballrall:hover .po {
+        opacity: 1;
+    }
+
+    .ballrtext h4 {
+        width: 200px;
+    }
+
+
+    @keyframes ballrgor {
+        from {
+            transform: rotate(30deg);
+        }
+
+        to {
+            transform: rotate(0deg);
+        }
+    }
+
+    @keyframes ballrgo {
+        from {
+            top: 170px;
+            left: 145px;
+        }
+
+        to {
+            top: 275px;
+            left: 295px;
+        }
+    }
+
+    @keyframes ballrtgo {
+        from {
+            opacity: 0;
+            transform: scale(0);
+            top: 100px;
+            left: 100px;
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+            top: 358px;
+            left: 235px;
+        }
+    }
+
+
+    footer {
+        color: #525252;
+        text-align: center;
+        /* background-color: #F3E5B4; */
+        height: 50px;
+        line-height: 50px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+
+
+    /* 動動底圖 */
+
+    .shape {
+        background: linear-gradient(45deg, rgb(230, 185, 128, 50%) 0%, rgb(234, 205, 163, 80%) 100%);
+        animation: morph 8s ease-in-out infinite;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        height: 600px;
+        width: 600px;
+        transition: all 1s ease-in-out;
+        z-index: -5;
+        position: absolute;
+        top: 20px;
+        left: 700px;
+    }
+
+    .shape2 {
+        background: linear-gradient(45deg, rgb(230, 185, 128, 50%) 0%, rgb(234, 205, 163, 80%) 100%);
+        animation: morph 8s ease-in-out infinite;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        height: 300px;
+        width: 400px;
+        transition: all 1s ease-in-out;
+        z-index: -5;
+        position: absolute;
+        top: 420px;
+        left: -200px;
+    }
+
+    @keyframes morph {
+        0% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+
+        50% {
+            border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        }
+
+        100% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+    }
+
+}
+
+/* 手機版開始 */
+
+@media screen and (max-width: 575px) {
+    body {
+        background-color: #FCF4D9;
+        overflow-x: hidden;
+    }
+
+    .myname:active {
+        animation: ballggor 0.6s linear 0s forwards, ballggo 0.7s cubic-bezier(0, .68, .08, 1) 0.7s forwards;
+    }
+
+    .machine {
+        background-image: url(images/machine.png);
+        width: 250px;
+        height: 391px;
+        background-position: center;
+        background-size: cover;
+        margin: 50px auto;
+        position: relative;
+    }
+
+    .mymachine {
+        position: relative;
+    }
+
+    .mymachiner img {
+        position: relative;
+        top: 278px;
+        left: 119px;
+        animation: rotate 8s linear 0s infinite forwards;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(-15deg);
+        }
+
+        to {
+            transform: rotate(345deg);
+        }
+    }
+
+    /* 01綠色扭蛋 */
+
+    .ballg {
+        animation: ballggor 8s linear 0s infinite ;
+        position: absolute;
+        top: 130px;
+        left: -6px;
+        background-image: url(images/ball_g.png);
+        width: 80px;
+        height: 80px;
+        transition: 0.3s;
+    }
+
+    /* .ballgall:hover .ballg {
+        background-image: url(images/ball_gh.png);
+    } */
+
+
+    .ballgt {
+        color: #a7e030;
+        font-size: 32px;
+        position: absolute;
+        top: 500px;
+        left: 38px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .ballgall .po {
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        text-align: center;
+        position: absolute;
+        top: 570px;
+        left: 55px;
+    }
+
+    .ballgtext span{
+        font-size: 15px;
+        color: #fff;
+        padding: 2px 33px;
+        font-family: 'Poppins', sans-serif;
+        background-color: #a7e030; 
+    }
+    
+
+    @keyframes ballggor {
+        from {
+            transform: rotate(30deg);
+        }
+
+        to {
+            transform: rotate(390deg);
+        }
+    }
+
+
+    /* 02黃色扭蛋 */
+
+    .bally {
+        animation: ballygor 8s linear 0s infinite forwards;
+        position: absolute;
+        top: 185px;
+        left: 25px;
+        background-image: url(images/ball_y.png);
+        width: 80px;
+        height: 80px;
+        transition: 0.3s;
+    }
+
+    /* .ballyall:hover .bally {
+        background-image: url(images/ball_yh.png);
+    } */
+
+    .ballyt {
+        color: #fcdc27;
+        font-size: 32px;
+        position: absolute;
+        top: 680px;
+        left: 38px;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .ballyall .po {
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        text-align: center;
+        position: absolute;
+        top: 750px;
+        left: 58px;
+    }
+
+    .ballytext span{
+        font-size: 15px;
+        color: #fff;
+        padding: 2px 33px;
+        font-family: 'Poppins', sans-serif;
+        background-color: #fcdc27; 
+    }
+    
+    @keyframes ballygor {
+        from {
+            transform: rotate(30deg);
+        }
+
+        to {
+            transform: rotate(390deg);
+        }
+    }
+
+
+    /* 03藍色扭蛋 */
+
+    .ballb {
+        animation: ballbgor 8s linear 0s infinite forwards;
+        position: absolute;
+        top: 131px;
+        left: 177px;
+        background-image: url(images/ball_b.png);
+        width: 80px;
+        height: 80px;
+        transition: 0.3s;
+    }
+
+    /* .ballball:hover .ballb {
+        background-image: url(images/ball_bh.png);
+    } */
+
+    .ballbt {
+        color: #9d92e2;
+        position: absolute;
+        top: 840px;
+        left: 58px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .ballball .po {
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        text-align: center;
+        position: absolute;
+        top: 910px;
+        left: 63px;
+    }
+
+    .ballbtext span{
+        font-size: 15px;
+        color: #fff;
+        padding: 2px 33px;
+        font-family: 'Poppins', sans-serif;
+        background-color: #9d92e2; 
+    }
+
+    @keyframes ballbgor {
+        from {
+            transform: rotate(30deg);
+        }
+
+        to {
+            transform: rotate(390deg);
+        }
+    }
+
+    /* 04粉色扭蛋 */
+
+    .ballp {
+        animation: ballpgor 8s linear 0s infinite forwards;
+        position: absolute;
+        top: 170px;
+        left: 85px;
+        background-image: url(images/ball_p.png);
+        width: 80px;
+        height: 80px;
+        transition: 0.3s;
+    }
+
+    /* .ballpall:hover .ballp {
+        background-image: url(images/ball_ph.png);
+    } */
+
+    .ballpt {
+        color: #ed8b9c;
+        position: absolute;
+        top: 970px;
+        left: 20px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .ballpall .po {
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        text-align: center;
+        position: absolute;
+        top: 1040px;
+        left: 73px;
+    }
+
+    .ballptext span{
+        font-size: 15px;
+        color: #fff;
+        padding: 2px 33px;
+        font-family: 'Poppins', sans-serif;
+        background-color: #ed8b9c; 
+    }
+
+    .ballptext h4 {
+        width: 200px;
+    }
+
+    @keyframes ballpgor {
+        from {
+            transform: rotate(30deg);
+        }
+
+        to {
+            transform: rotate(390deg);
+        }
+    }
+
+
+    /* 05紅色扭蛋 */
+
+    .ballr {
+        animation: ballrgor 8s linear 0s infinite forwards;
+        position: absolute;
+        top: 186px;
+        left: 145px;
+        background-image: url(images/ball_r.png);
+        width: 80px;
+        height: 80px;
+        transition: 0.3s;
+    }
+
+    /* .ballrall:hover .ballr {
+        background-image: url(images/ball_rh.png);
+    } */
+
+    .ballrt {
+        color: #da7258;
+        position: absolute;
+        top: 1105px;
+        left: 35px;
+        text-align: center;
+        line-height: 30px;
+  
+    }
+
+    .ballrall .po {
+        color: #8a8a8a;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        text-align: center;
+        position: absolute;
+        top: 1175px;
+        left: 85px;
+    }
+
+
+    .ballrtext span{
+        font-size: 15px;
+        color: #fff;
+        padding: 2px 33px;
+        font-family: 'Poppins', sans-serif;
+        background-color: #da7258; 
+    }
+    
+
+    @keyframes ballrgor {
+        from {
+            transform: rotate(30deg);
+        }
+
+        to {
+            transform: rotate(390deg);
+        }
+    }
+
+   main{
+        margin-bottom: 850px;
+    }
+
+
+    footer {
+        color: #525252;
+        text-align: center;
+        /* background-color: #F3E5B4; */
+        height: 50px;
+        line-height: 50px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+
+
+    /* 動動底圖 */
+
+    .shape {
+        background: linear-gradient(45deg, rgb(230, 185, 128, 50%) 0%, rgb(234, 205, 163, 80%) 100%);
+        animation: morph 8s ease-in-out infinite;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        height: 600px;
+        width: 600px;
+        transition: all 1s ease-in-out;
+        z-index: -5;
+        position: absolute;
+        top: 20px;
+        left: 400px;
+    }
+
+    .shape2 {
+        background: linear-gradient(45deg, rgb(230, 185, 128, 50%) 0%, rgb(234, 205, 163, 80%) 100%);
+        animation: morph 8s ease-in-out infinite;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        height: 300px;
+        width: 400px;
+        transition: all 1s ease-in-out;
+        z-index: -5;
+        position: absolute;
+        top: 400px;
+        left: -300px;
+    }
+
+    @keyframes morph {
+        0% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+
+        50% {
+            border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        }
+
+        100% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+    }
+
+}
