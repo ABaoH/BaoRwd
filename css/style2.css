@@ -1,0 +1,227 @@
+body{
+    background-color: #FCF4D9;
+}
+
+main{
+    padding: 80px;
+}
+.bg{
+    background-image: url("../images/machine.png");
+    width: 500px;
+    height: 500px;
+}
+
+nav{
+   border-bottom: 1px solid #000; 
+}
+
+.container-fluid{
+    background-color: #F3E5B4;
+}
+
+h1{
+    color: #4f4f4f;
+}
+
+h2{
+    font-size: 21px;
+}
+
+/* a{
+    text-decoration: none;
+} */
+
+.mytltle{
+    text-align: center;
+    font-size: 50px;
+}
+
+/* 扭蛋機 */
+
+.machine{
+    margin: 0 auto;
+}
+
+.machiner{
+    animation: rotate 0.5s linear 0s forwards;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(-15deg);
+    }
+    to{
+        transform: rotate(135deg);
+    }
+}
+
+/* 綠色扭蛋開始 */
+
+.ballg h2{
+    color: #aee241;
+}
+
+.subtitle{
+    display: none;
+}
+
+.ballg img:hover{
+    display: block;
+}
+
+/* .ballg img{
+    animation: ballggo 0.8s cubic-bezier(.17,.67,.72,1.44) 0.5s forwards;
+}
+
+@keyframes ballggo{
+    from{
+        transform: scale(0.2);
+        /* transform: rotate(90deg); */
+        opacity: 0%;
+        padding-left: 300px;
+        
+    }
+    to{
+        transform: scale(1);
+        /* transform: rotate(0deg); */
+        opacity: 100%;
+        padding-left: 80px;
+    }
+} */
+
+
+/* 黃色扭蛋開始 */
+
+.bally h2{
+    color: #fcdd30;
+}
+
+/* .bally img{
+    animation: ballygo 0.8s cubic-bezier(.17,.67,.72,1.44) 0.6s forwards;
+}
+
+@keyframes ballygo{
+    from{
+        transform: scale(0.2);
+        /* transform: rotate(90deg); */
+        opacity: 0%;
+        padding-left: 300px;
+    }
+    to{
+        transform: scale(1);
+        /* transform: rotate(0deg); */
+        opacity: 100%;
+        padding-left: 150px;
+    }
+} */
+
+/* 藍色扭蛋開始 */
+
+.ballb h2{
+    color: #9588df;
+}
+
+/* .ballb img{
+    animation: ballbgo 0.8s cubic-bezier(.17,.67,.72,1.44) 0.5s forwards;
+}
+
+@keyframes ballbgo{
+    from{
+        transform: scale(0.2);
+        transform: rotate(90deg);
+        opacity: 0%;
+    }
+    to{
+        transform: scale(1);
+        transform: rotate(0deg);
+        opacity: 100%;
+    }
+} */
+
+/* 粉色扭蛋開始 */
+
+.ballp h2{
+    color: #ec8295;
+}
+
+.ballp{
+    width: 250px;
+    height: 80px;
+}
+
+.ballp:hover .ballpbox{
+    display: block;
+}
+
+.ballp .ballpbox{
+    display: none;
+}
+
+/* .ballp img{
+    animation: ballbgo 0.8s cubic-bezier(.17,.67,.72,1.44) 0.5s forwards;
+}
+
+@keyframes ballpgo{
+    from{
+        transform: scale(0.2);
+        transform: rotate(90deg);
+        opacity: 0%;
+    }
+    to{
+        transform: scale(1);
+        transform: rotate(0deg);
+        opacity: 100%;
+    }
+} */
+
+/* 紅色扭蛋開始 */
+
+.ballr h2{
+    color: #d86b50;
+}
+
+.ballr{
+    width: 250px;
+    height: 80px;
+}
+
+.ballr:hover .ballrbox{
+    display: block;
+}
+
+.ballr .ballrbox{
+    display: none;
+}
+
+/* .ballr img{
+    animation: ballrgo 0.8s cubic-bezier(.17,.67,.72,1.44) 0.5s forwards;
+}
+
+@keyframes ballrgo{
+    from{
+        transform: scale(0.2);
+        /* transform: rotate(90deg); */
+        opacity: 0%;
+        padding-right: 0px;
+    }
+    to{
+        transform: scale(1);
+        /* transform: rotate(0deg); */
+        opacity: 100%;
+        padding-right: 300px;
+    }
+} */
+
+p{
+    color: #707070;
+}
+
+footer{
+    text-align: center;
+    
+}
+
+
+/* .bally img:hover{
+     content: url("images/ball_yh.png");
+} */
