@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蔚藍文化出版社</title>
+    <link rel="shortcut icon" href="images/logo_icon.png">
+    <!-- boostrap起手式 -->
+    <script src="css/jquery-3.6.0.min.js"></script>
+    <script src="css/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- boostrap起手式 -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 圖示文字開始 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <!-- 圖示文字結束 -->
+    <!-- 文字樣式開始 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- 文字樣式結束 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <!-- 中文字 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap" rel="stylesheet">
+    <!-- 英文字 -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-light bg-white fixed-top">
+            <a class="navbar-brand" href="index.html">
+                <h1><img src="images/logo.png" alt="蔚藍文化logo"></h1>
+            </a>
+            <!--三橫線按鈕-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 d-flex justify-content-end align-items-center">
+                    <li class="nav-item active">
+                        <a class="nav-item nav-link active " href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <ul>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="books.html" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown">
+                                    書籍看這裡
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-left">
+                                    <a class="dropdown-item" href="#history">歷史</a>
+                                    <a class="dropdown-item" href="#record">紀實</a>
+                                    <a class="dropdown-item" href="#literature">文學</a>
+                                    <a class="dropdown-item" href="#culture">文化研究</a>
+                                    <a class="dropdown-item" href="#other">其他</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="buy.html">購書傳送門</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="media.html">媒體報導</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="about.html">關於蔚藍</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="index.html#contact">聯絡我們</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row mx-5" id="history">
+            <div class="col-12 mytitle">
+                <h2>歷史<span>history</span></h2>
+            </div>
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-5 history-g">
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/history/history_01.jpg" class="card-img-top" alt="國分直一與臺南：不是灣生的灣生">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">國分直一與臺南：不是灣生的灣生</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/history/history_02.jpg" class="card-img-top" alt="島嶼浮世繪：日治臺灣的大眾生活">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">島嶼浮世繪：日治臺灣的大眾生活</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/history/history_03.jpg" class="card-img-top" alt="關鍵七十一天：二戰前後臺灣主體意識的萌芽與論爭">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">關鍵七十一天：二戰前後臺灣主體意識的萌芽與論爭</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/history/history_04.jpg" class="card-img-top" alt="官營移民：吉野村回顧錄">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">官營移民：吉野村回顧錄</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/history/history_05.jpg" class="card-img-top" alt="漫步左營舊城：歷史地圖集">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">漫步左營舊城：歷史地圖集</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/history/history_06.jpg" class="card-img-top" alt="人間蔣渭水：蔣渭水歷史影像集">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">人間蔣渭水：蔣渭水歷史影像集</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/history/history_07.jpg" class="card-img-top"
+                            alt="來去府城透透氣：一九三○～一九六○年代文青醫生吳新榮的日常娛樂三部曲">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">來去府城透透氣：一九三○～一九六○年代文青醫生吳新榮的日常娛樂三部曲</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-5" id="record">
+            <div class="col-12 mytitle">
+                <h2>紀實<span>Documentary</span></h2>
+            </div>
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-5 history-g">
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/record/record_01.jpg" class="card-img-top" alt="寶島暖實力：在臺灣真切活著的36顆心">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">寶島暖實力：在臺灣真切活著的36顆心</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/record/record_02.jpg" class="card-img-top" alt="農產加工不只醬：開箱地方創生的風土WAY">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">農產加工不只醬：開箱地方創生的風土WAY</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/record/record_03.jpg" class="card-img-top" alt="西班牙朝聖800K：Kelly這樣撿回自己">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">西班牙朝聖800K：Kelly這樣撿回自己</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/record/record_04.jpg" class="card-img-top" alt="愛欲京都">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">愛欲京都</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/record/record_05.jpg" class="card-img-top"
+                            alt="迸裂土地而出的力量：走過二十年，十二個九二一災後堅持至今的故事">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">迸裂土地而出的力量：走過二十年，十二個九二一災後堅持至今的故事</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-5" id="literature">
+            <div class="col-12 mytitle">
+                <h2>文學<span>literature</span></h2>
+            </div>
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-5 history-g">
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/literature/literature_01.jpg" class="card-img-top" alt="經典與非典：文學世紀初">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">經典與非典：文學世紀初</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/literature/literature_02.jpg" class="card-img-top" alt="亂世英雄傾國淚">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">亂世英雄傾國淚</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/literature/literature_03.jpg" class="card-img-top" alt="月落胭脂巷">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">月落胭脂巷</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/literature/literature_04.jpg" class="card-img-top" alt="記持開始食餌">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">記持開始食餌</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/literature/literature_05.jpg" class="card-img-top"
+                            alt="電波聲外文思漾——黃鑑村（青釗）文學作品暨研究集">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">電波聲外文思漾——黃鑑村（青釗）文學作品暨研究集</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/literature/literature_06.jpg" class="card-img-top" alt="詩的小宇宙：和孩子玩現代詩">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">詩的小宇宙：和孩子玩現代詩</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/literature/literature_07.jpg" class="card-img-top" alt="素朴の心">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">素朴の心</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/literature/literature_08.jpg" class="card-img-top" alt="落花時節：葉笛詩文集">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">落花時節：葉笛詩文集</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/literature/literature_09.jpg" class="card-img-top" alt="和風 人隨行">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">和風 人隨行</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/literature/literature_10.jpg" class="card-img-top" alt="臺南映象">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">臺南映象</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/literature/literature_11.jpg" class="card-img-top" alt="太陽旗下的小子">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">太陽旗下的小子</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-5" id="culture">
+            <div class="col-12 mytitle">
+                <h2 class="col-12">文化研究<span>culture</span></h2>
+            </div>
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-5 history-g">
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/culture/culture_01.jpg" class="card-img-top" alt="驚濤戰府城：海賊王蔡牽在臺南">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">驚濤戰府城：海賊王蔡牽在臺南</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/culture/culture_02.jpg" class="card-img-top" alt="從釘子到鐵剪刀：臺南壁鎖300年的華麗轉身">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">從釘子到鐵剪刀：臺南壁鎖300年的華麗轉身</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/culture/culture_03.jpg" class="card-img-top" alt="溪說臺南：曾文溪的地景與人文">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">溪說臺南：曾文溪的地景與人文</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/culture/culture_04.jpg" class="card-img-top" alt="鹽鄉與他們的世紀：鹽分地帶歷史名人誌">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">鹽鄉與他們的世紀：鹽分地帶歷史名人誌</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/culture/culture_05.jpg" class="card-img-top" alt="送王迎福：臺南王船十三艙添載物件研究">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">送王迎福：臺南王船十三艙添載物件研究</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/culture/culture_06.jpg" class="card-img-top"
+                            alt="禮祝下鄉：驅瘟逐疫祭典中的王府行儀——臺南、東港、漳州比較研究">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">禮祝下鄉：驅瘟逐疫祭典中的王府行儀——臺南、東港、漳州比較研究</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/culture/culture_07.jpg" class="card-img-top" alt="揮動府城的風：臺南鳥文化">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">揮動府城的風：臺南鳥文化</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/culture/culture_08.jpg" class="card-img-top" alt="島內漂泊記事：臺南都市原住民">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">島內漂泊記事：臺南都市原住民</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/culture/culture_09.jpg" class="card-img-top" alt="米鄉地圖：南瀛米食文化">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">米鄉地圖：南瀛米食文化</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/culture/culture_10.jpg" class="card-img-top" alt="臺南獨家記憶：府城米糕栫（餞）研究">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">臺南獨家記憶：府城米糕栫（餞）研究</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/culture/culture_11.jpg" class="card-img-top" alt="流轉的街道：府城米糧研究">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">流轉的街道：府城米糧研究</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/culture/culture_12.jpg" class="card-img-top" alt="延綿的餐桌：府城米食文化">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">延綿的餐桌：府城米食文化</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/culture/culture_13.jpg" class="card-img-top" alt="鳳邑舊城城隍出巡：信仰與地方再現">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">鳳邑舊城城隍出巡：信仰與地方再現</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/culture/culture_14.jpg" class="card-img-top" alt="臺南過火儀式研究">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">臺南過火儀式研究</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/culture/culture_15.jpg" class="card-img-top" alt="臺南牽亡歌陣研究">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">臺南牽亡歌陣研究</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/culture/culture_16.jpg" class="card-img-top" alt="臺南生育禮俗研究">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">臺南生育禮俗研究</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/culture/culture_17.jpg" class="card-img-top" alt="臺南嫁娶禮俗研究">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">臺南嫁娶禮俗研究</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/culture/culture_18.jpg" class="card-img-top" alt="從北齋到吉卜力：走進博物館看見日本動漫歷史！">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">從北齋到吉卜力：走進博物館看見日本動漫歷史！</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-5" id="other">
+            <div class="col-12 mytitle">
+                <h2>其他<span>other</span></h2>
+            </div>
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-5 history-g">
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/other/other_01.jpg" class="card-img-top" alt="歌謠交響：許石創作與採編歌謠曲譜集">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">歌謠交響：許石創作與採編歌謠曲譜集</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/other/other_02.jpg" class="card-img-top" alt="雋藝風華：藝術拓荒者林智信回憶錄">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">雋藝風華：藝術拓荒者林智信回憶錄</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mx-1">
+                        <img src="images/other/other_03.jpg" class="card-img-top" alt="臺灣老虎郵：百年前臺灣民主國發行郵票的故事">
+                        <div class="card-body px-0">
+                            <h4 class="card-title">臺灣老虎郵：百年前臺灣民主國發行郵票的故事</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="container-fluid">
+        <div class="myfooter">Azurebks &copy; 2021 All Rignt Reserved</div>
+    </footer>
+</body>
+
+<script>
+
+    // 錨點滑動
+    $(document).ready(function () {
+        $('.backTop').on('click', function () {
+            $("html,body").animate(
+                {
+                    scrollTop: 0
+                },
+                100
+            );
+        })
+        $("a").on("click", function () {
+            var hrefLink = $(this).attr("href");
+            console.log(hrefLink);
+            $("html,body").animate(
+                {
+                    scrollTop: $(hrefLink).offset().top
+                },
+                1000
+            );
+        });
+    });
+
+</script>
+
+
+</html>
